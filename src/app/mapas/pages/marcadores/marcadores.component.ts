@@ -86,9 +86,9 @@ export class MarcadoresComponent implements AfterViewInit {
 
   }
 
-  irMarcador( marker: mapboxgl.Marker ) {
+  irMarcador( marcadorColor: MarcadorColor ) {
     this.mapa.flyTo({
-      center: marker.getLngLat()
+      center: marcadorColor.marker?.getLngLat()
     });
   }
 
